@@ -1,1 +1,14 @@
-<span>hello again</span>
+<%- partial('_partial/header.ejs') %>
+<% page.posts.each(function(post){ %>
+    <%- partial('_partial/article', {post: post}) %>
+<% })%>
+
+<nav>
+<% if(page.prev) {%>
+    <a href="<%- url_for(page.prev_link) %>">上页</a>
+<% }%>
+
+<% if(page.next) {%>
+    <a href="<%- url_for(page.next_link) %>">下页</a>
+<% }%>
+</nav>
