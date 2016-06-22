@@ -10,7 +10,7 @@
         </div>
     <% }else{ %>
         <p class="mytitle"><%= post.title %></p>
-        <p class="mydate"><small><%= post.date %></small></p>
+        <p class="mydate"><small><%- post.date.format(config.date_format) %></small></p>
         <div><%- post.content %></div>
     <% } %>
 </section>
