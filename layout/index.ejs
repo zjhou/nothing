@@ -1,25 +1,22 @@
-<div class="container">
-    <div class="row">
-
-        <div class="6u">
-          <%- partial('_partial/header.ejs') %>
-        </div>
-        <div class="6u">
-            <% page.posts.each(function(post){ %>
-            <%- partial('_partial/article', {post: post}) %>
-            <% })%>
-
+<div class="wrapper">
+    <div>
+      <%- partial('_partial/header.ejs') %>
+    </div>
+    <div>
+        <% page.posts.each(function(post){ %>
+        <%- partial('_partial/article', {post: post}) %>
+        <% })%>
+        <section>
             <nav>
                 <% if(page.prev) {%>
-                <a href="<%- url_for(page.prev_link) %>">上页</a>
+                <a id="left-navigator" href="<%- url_for(page.prev_link) %>">上</a>
                 <% }%>
 
                 <% if(page.next) {%>
-                <a href="<%- url_for(page.next_link) %>">下页</a>
+                <a hid="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
                 <% }%>
             </nav>
-
-        </div>
+        </section>
     </div>
 </div>
 

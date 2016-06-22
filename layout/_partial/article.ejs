@@ -1,5 +1,16 @@
-<section>
-    <p><b><%= post.title %></b></p>
-    <small><%= post.date %></small>
-    <div><%- post.content %></div>
+<section id="<%= post.id || ''%>">
+    <% var title = post.title %>
+    <% var ptn = /^poem/ %>
+    <% if(ptn.exec(title)){ %>
+        <% var fields = title.split(':') %>
+        <% var ptitle = fields[1], author = fields[2] %>
+        <div class="vertical">
+            <span class="black"><%= ptitle %>＼<%= author %></span>
+            <%- post.content %>
+        </div>
+    <% }else{ %>
+        <p class="mytitle"><%= post.title %></p>
+        <p class="mydate"><small><%= post.date %></small></p>
+        <div><%- post.content %></div>
+    <% } %>
 </section>
