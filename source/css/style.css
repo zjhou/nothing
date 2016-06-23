@@ -76,9 +76,8 @@ a:hover small {
     color:#777;
 }
 
-.wrapper {
-    width:860px;
-    margin:100px auto;
+.cont-wrap {
+    padding:150px 0;
 }
 
 blockquote {
@@ -215,7 +214,6 @@ header ul a strong {
 
 section {
     width:500px;
-    float:right;
     padding-bottom:100px;
 }
 
@@ -278,12 +276,7 @@ footer {
     bottom:50px;
 }
 
-@media print, screen and (max-width: 960px) {
-
-    div.wrapper {
-        width:auto;
-        margin:0;
-    }
+@media print, screen and (max-width: 993px) {
 
     header, section, footer {
         float:none;
