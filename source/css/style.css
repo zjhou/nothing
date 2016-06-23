@@ -218,13 +218,18 @@ section {
 }
 
 .mydate {
+    color: #ffffff;
     transition: all .5s;
 }
 
-.mydate:hover {
-    color: #2d2d2d;
-}
+/*.mydate:hover {
+    color: #ffffff;
+}*/
 
+
+.mytitle:hover + .mydate {
+    color: #2d2d2d
+}
 
 .mytitle:after
 {

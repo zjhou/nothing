@@ -1,6 +1,6 @@
 <section id="<%= post.id || ''%>">
     <% var title = post.title %>
-    <% var ptn = /^poem/ %>
+    <% var ptn = /^[Pp]oem/ %>
     <% if(ptn.exec(title)){ %>
         <% var fields = title.split(':') %>
         <% var ptitle = fields[1], author = fields[2] %>
@@ -10,7 +10,7 @@
         </div>
     <% }else{ %>
         <p class="mytitle"><%= post.title %></p>
-        <p class="mydate"><small><%= post.dt %></small></p>
+        <p class="mydate"><small><%= post.dt || post.date.format(theme.format_date || config.format_date ) %></small></p>
         <div><%- post.content %></div>
     <% } %>
 </section>
