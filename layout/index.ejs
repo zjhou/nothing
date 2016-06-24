@@ -9,11 +9,10 @@
             <% })%>
             <section>
                 <nav>
-                    <% if(page.prev) {%>
+                    <% if(page.prev) { %>
                     <a id="left-navigator" href="<%- url_for(page.prev_link) %>">上</a>
                     <% }%>
-
-                    <% if(page.next) {%>
+                    <% if(page.next) { %>
                     <a hid="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
                     <% }%>
                 </nav>

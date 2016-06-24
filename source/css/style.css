@@ -54,16 +54,17 @@ a {
 }
 
 .vertical p {
-    margin: 0 20px 0 0;
+    margin: 0 60px 0 0;
     white-space: nowrap;
 }
 
 span.black {
     color:#000;
-    padding-top: 10px;
-    border-top: 7px solid #000;
 }
 
+.cont-wrap:not(.col-md-6):hover {
+    cursor: url(../static/cross.png), auto;
+}
 
 a small {
     font-size:11px;
@@ -213,8 +214,12 @@ header ul a strong {
 }
 
 section {
-    width:500px;
-    padding-bottom:100px;
+    width: 500px;
+    padding-bottom: 200px;
+}
+
+section:last-child {
+    padding-bottom: 0;
 }
 
 .mydate {
