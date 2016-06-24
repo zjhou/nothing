@@ -10,6 +10,10 @@ body {
     font-weight:300;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .pagination {float: left}
 
 h1, h2, h3, h4, h5, h6{
@@ -257,7 +261,7 @@ section:last-child {
 }
 
 .mytitle:hover, a:hover{
-    cursor: url(../static/curs.png), auto;
+    cursor: url(../static/pointer.png), auto;
 }
 .mytitle:hover:after
 {

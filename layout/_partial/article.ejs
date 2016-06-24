@@ -9,8 +9,12 @@
             <%- post.content %>
         </div>
     <% }else{ %>
-        <p class="mytitle"><%= post.title %></p>
+        <p class="mytitle"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
         <p class="mydate"><small><%= post.dt || post.date.format(theme.format_date || config.format_date ) %></small></p>
         <div><%- post.content %></div>
     <% } %>
 </section>
+
+<% if(!index){ %>
+    <%- partial('_partial/nav', {page: page}) %>
+<% } %>

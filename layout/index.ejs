@@ -1,24 +1,16 @@
-<div class="container-fluid">
-    <div class="row cont-wrap">
-        <div class="col-sm-0 col-md-3 col-md-offset-2">
-            <%- partial('_partial/header.ejs') %>
-        </div>
-        <div class="col-md-6">
-            <% page.posts.each(function(post){ %>
-            <%- partial('_partial/article', {post: post}) %>
-            <% })%>
-            <section>
-                <nav>
-                    <% if(page.prev) { %>
-                    <a id="left-navigator" href="<%- url_for(page.prev_link) %>">上</a>
-                    <% }%>
-                    <% if(page.next) { %>
-                    <a hid="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
-                    <% }%>
-                </nav>
-            </section>
-        </div>
+<% page.posts.each(function(post){ %>
+<%- partial('_partial/article', {post: post, index: true}) %>
+<% })%>
 
-    </div>
-</div>
+<section>
+    <nav>
+        <% if(page.prev) { %>
+        <a id="left-navigator" href="<%- url_for(page.prev_link) %>">上</a>
+        <% }%>
+        <% if(page.next) { %>
+        <a hid="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
+        <% }%>
+    </nav>
+</section>
+
 
