@@ -135,11 +135,11 @@ p>img:hover {
 
 p>img{
     -webkit-filter: grayscale(1);
-    -webkit-transform: all 0.5s;
-    -moz-transform: all 0.5s;
-    -ms-transform: all 0.5s;
-    -o-transform: all 0.5s;
-    transform: all 0.5s;
+    -webkit-transition: all .5s;
+    -moz-transition:  all .5s;
+    -ms-transition:  all .5s;
+    -o-transition:  all .5s;
+    transition:  all .5s;
 }
 
 header {
