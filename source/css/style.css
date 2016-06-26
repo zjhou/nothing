@@ -47,6 +47,7 @@ a {
     color: #000;
     font-weight:400;
     text-decoration: none;
+    text-shadow: 1px 1px #eee;
 }
 
 .vertical {
