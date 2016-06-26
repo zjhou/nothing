@@ -5,7 +5,7 @@
         <% var fields = title.split(':') %>
         <% var ptitle = fields[1], author = fields[2] %>
         <div class="vertical">
-            <span class="black"><%= ptitle %>＼<%= author %></span>
+            <a href="<%- url_for(post.path) %>"><span class="black"><%= ptitle %>＼<%= author %></span> </a>
             <%- post.content %>
         </div>
     <% }else{ %>

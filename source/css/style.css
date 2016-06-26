@@ -129,6 +129,19 @@ img {
     max-width:100%;
 }
 
+p>img:hover {
+    -webkit-filter: grayscale(0);
+}
+
+p>img{
+    -webkit-filter: grayscale(1);
+    -webkit-transform: all 0.5s;
+    -moz-transform: all 0.5s;
+    -ms-transform: all 0.5s;
+    -o-transform: all 0.5s;
+    transform: all 0.5s;
+}
+
 header {
     width:270px;
     float:left;
