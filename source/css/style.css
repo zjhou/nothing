@@ -47,7 +47,7 @@ a {
     color: #000;
     font-weight:400;
     text-decoration: none;
-    text-shadow: 1px 1px #eee;
+    text-shadow: 1px 1px 1px #eee;
 }
 
 .vertical {
@@ -65,6 +65,7 @@ a {
 
 span.black {
     color:#000;
+    text-shadow: -1px 1px 1px #eee;
 }
 
 .cont-wrap:hover:not(.col-md-6) {
