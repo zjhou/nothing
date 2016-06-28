@@ -50,6 +50,7 @@ a {
     text-shadow: 1px 1px 1px #eee;
 }
 
+
 .vertical {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -149,6 +150,8 @@ header {
     float:left;
     position:fixed;
 }
+
+#subtitle {margin: 60px 0 0 0;}
 
 header ul {
     list-style:none;

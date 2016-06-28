@@ -1,4 +1,6 @@
-favicon: /imgs/favicon.png
+logo: /imgs/favicon.png
 format_date: YYYY MM DD
 root: /
 intro: 90后＼男
+# subtitle: Boring for a reason.
+subtitle: false
