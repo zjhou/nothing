@@ -69,9 +69,11 @@ span.black {
     text-shadow: -1px 1px 1px #eee;
 }
 
+/*
 .cont-wrap:hover:not(.col-md-6) {
     cursor: url(../static/cross.png), auto;
 }
+*/
 
 a small {
     font-size:11px;
@@ -278,9 +280,12 @@ section:last-child {
     display:inline-block;
 }
 
-.mytitle:hover, a:hover{
+/*
+.mytitle:hover, a:hover, svg>a:hover{
     cursor: url(../static/pointer.png), auto;
 }
+*/
+
 .mytitle:hover:after
 {
     width: 100%;
@@ -302,12 +307,14 @@ hr {
     margin: 10px 0;
 }
 
+/*
 footer {
     width:270px;
     float:left;
     position:fixed;
-    bottom:50px;
+    bottom:10px;
 }
+*/
 
 @media print, screen and (max-width: 993px) {
 

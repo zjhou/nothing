@@ -3,11 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="0135d251-4102-4321-aa44-2ec206a22728" name="blog" url="http://23.88.59.239">
-        <fileTransfer host="23.88.59.239" port="21" password="dfc4dfd9dfc2dfd0dfdadfc6dfcedfc0dfc8dfc7dff5dff0dfc0dfe2dfe5dfff" username="z">
+        <fileTransfer host="23.88.59.239" port="22" accessType="SFTP" password="dfc4dfd9dfc2dfd0dfdadfc6dfcedfc0dfc8dfc7dff5dff0dfc0dfe2dfe5dfff" username="z">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="21" />
+          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>
