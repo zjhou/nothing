@@ -7,11 +7,16 @@ body {
     padding:50px;
     font:14px/1.5  UbtMono, '宋体', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#777;
+    overflow-y: scroll;
     font-weight:300;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000;
 }
 
 .pagination {float: left}
