@@ -1,15 +1,15 @@
 <% page.posts.each(function(post){ %>
 <%- partial('_partial/article', {post: post, index: true}) %>
-<% })%>
+<% }) %>
 
 <section>
     <nav>
         <% if(page.prev) { %>
         <a id="left-navigator" href="<%- url_for(page.prev_link) %>">上</a>
-        <% }%>
+        <% } %>
         <% if(page.next) { %>
-        <a hid="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
-        <% }%>
+        <a id="right-navigator" href="<%- url_for(page.next_link) %>">下</a>
+        <% } %>
     </nav>
 </section>
 
