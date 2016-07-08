@@ -151,6 +151,7 @@ img {
 
 p > img:hover {
     -webkit-filter: grayscale(0);
+    cursor: none;
 }
 
 p > img {
@@ -311,9 +312,9 @@ small {
 
 hr {
     border: 0;
-    background: #e5e5e5;
-    height: 1px;
-    margin: 0 0 20px;
+    height: 0;
+    border-top: 1px dotted rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dotted rgba(230, 230, 230, 0.5);
 }
 
 #left-navigator,
