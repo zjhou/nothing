@@ -83,12 +83,6 @@ span.black {
     text-shadow: -1px 1px 1px #eee;
 }
 
-/*
-.cont-wrap:hover:not(.col-md-6) {
-    cursor: url(../static/cross.png), auto;
-}
-*/
-
 a small {
     font-size: 11px;
     color: #4d885d;
@@ -413,4 +407,43 @@ footer {
         font-size: 12pt;
         color: #444;
     }
+}
+
+#more {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    font-size: 12px;
+    background: url(../static/cross.png) center -11px;
+    opacity:.5;
+    color: #fff;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    z-index: 999;
+}
+
+#more:hover{
+    cursor: pointer;
+    opacity: .2;
+}
+
+#pannel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background: #000;
+    color: #fff;
+    display: none;
+    z-index: 998;
+}
+
+.blur {
+    -webkit-filter: blur(3px);
 }
