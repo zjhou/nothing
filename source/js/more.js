@@ -7,6 +7,7 @@ $(function () {
     /* global vars
      -------------------------------------------------------*/
     var $1st_section = $("section:first")
+        , $head = $("header")
         , $pannel = $("#pannel")
         , $content = $(".container-fluid")
         , $more = $("#more")
@@ -26,18 +27,29 @@ $(function () {
      -------------------------------------------------------*/
     function position() {
         var x = $1st_section.offset().left + $1st_section.width()
-            , y = isNight ? 200 : $(window).height()
+            , margin = 20
             , window_wd = $(window).width()
-            , margin = 20;
+            , y = isNight ? $head.offset().top - $(window).scrollTop()
+            : $(window).height() - margin
+            , pd_top = $head.offset().top - $(window).scrollTop()
+            , pd_left = $head.offset().left
+            , pd_right = window_wd - x;
 
+        console.log(y);
         if (window_wd < 992 && isNight) {
             dayNightToggle()
         }
 
         $more.css({
             "left": x + margin + 'px',
-            "top": y - margin + 'px'
+            "top": y + 'px'
         });
+        
+        $pannel.css({
+            "padding-top":  pd_top + "px",
+            "padding-left": pd_left + "px",
+            "padding-right": pd_right - 25 + "px",
+        })
     }
 
     function rotate(ele, degree) {

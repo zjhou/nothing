@@ -1,6 +1,6 @@
 <%- partial('_partial/head') %>
 <body style="overflow-y: scroll">
-<div class="container-fluid">
+<div class="container-fluid" id="day">
     <div class="row cont-wrap">
         <div class="col-sm-0 col-md-3 col-md-offset-2">
             <%- partial('_partial/header.ejs') %>
@@ -13,6 +13,8 @@
     </div>
 </div>
 <div id="more" class="visible-lg visible-md"></div>
-<div id="pannel"></div>
+<div id="pannel">
+    <%- partial("_partial/pannel")%>
+</div>
 </body>
 </html>

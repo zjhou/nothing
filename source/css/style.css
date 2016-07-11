@@ -444,6 +444,21 @@ footer {
     z-index: 998;
 }
 
+#pannel object{
+    fill: #fff;
+}
+
+#pannel a {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: none;
+}
+
+.pl-cont{
+    /*text-align: right;*/
+}
+
 .blur {
     -webkit-filter: blur(3px);
 }
+
