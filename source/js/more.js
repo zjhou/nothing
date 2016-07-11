@@ -8,6 +8,7 @@ $(function () {
      -------------------------------------------------------*/
     var $1st_section = $("section:first")
         , $head = $("header")
+        , margin = 40 
         , $pannel = $("#pannel")
         , $content = $(".container-fluid")
         , $more = $("#more")
@@ -26,8 +27,7 @@ $(function () {
     /* functions
      -------------------------------------------------------*/
     function position() {
-        var x = $1st_section.offset().left + $1st_section.width()
-            , margin = 20
+        var x = $1st_section.offset().left + $1st_section.width() + 20
             , window_wd = $(window).width()
             , y = isNight ? $head.offset().top - $(window).scrollTop()
             : $(window).height() - margin
@@ -40,8 +40,8 @@ $(function () {
         }
 
         $more.css({
-            "left": x + margin + 'px',
-            "top": y + 'px'
+            "left": x + 'px',
+            "top": y + 10 + 'px'
         });
         
         $pannel.css({
@@ -69,9 +69,7 @@ $(function () {
             $content.addClass("blur");
 
             $more.animate({
-                "top": "200px",
-                "width": "9px",
-                "height": "9px",
+                "top": $head.offset().top - $(window).scrollTop() + 10 + "px",
                 "opacity": "1",
             }, 500);
 
@@ -85,9 +83,7 @@ $(function () {
             $(window).scrollEnd(endScroll, 100);
 
             $more.css({
-                "width": "5px",
-                "height": "5px",
-                "background": "url(/blog/static/cross.png) center -11px",
+                "background": "url(/blog/static/cross.png) center -9px",
             })
         }
     }

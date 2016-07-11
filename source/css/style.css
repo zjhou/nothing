@@ -411,11 +411,11 @@ footer {
 
 #more {
     position: fixed;
-    width: 5px;
-    height: 5px;
+    width: 9px;
+    height: 9px;
     display: inline-block;
     font-size: 12px;
-    background: url(../static/cross.png) center -11px;
+    background: url(../static/cross.png) center -9px;
     opacity:.5;
     color: #fff;
     -webkit-transition: opacity .2s;
