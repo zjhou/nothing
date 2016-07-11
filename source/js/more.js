@@ -35,7 +35,6 @@ $(function () {
             , pd_left = $head.offset().left
             , pd_right = window_wd - x;
 
-        console.log(y);
         if (window_wd < 992 && isNight) {
             dayNightToggle()
         }
@@ -48,7 +47,7 @@ $(function () {
         $pannel.css({
             "padding-top":  pd_top + "px",
             "padding-left": pd_left + "px",
-            "padding-right": pd_right - 25 + "px",
+            "padding-right": pd_right - 30 + "px",
         })
     }
 
