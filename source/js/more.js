@@ -8,6 +8,7 @@ $(function () {
      -------------------------------------------------------*/
     var $1st_section = $("section:first")
         , $head = $("header")
+        , $logo = $("#pannel svg")
         , margin = 40 
         , $pannel = $("#pannel")
         , $content = $(".container-fluid")
@@ -47,7 +48,7 @@ $(function () {
         $pannel.css({
             "padding-top":  pd_top + "px",
             "padding-left": pd_left + "px",
-            "padding-right": pd_right - 30 + "px",
+            "padding-right": pd_right - 12 + "px",
         })
     }
 
@@ -68,6 +69,7 @@ $(function () {
             $(window).off("scroll");
             $content.addClass("blur");
 
+            $logo.css("fill", "#fff")
             $more.animate({
                 "top": $head.offset().top - $(window).scrollTop() + 10 + "px",
                 "opacity": "1",
@@ -82,6 +84,7 @@ $(function () {
             $(window).on("scroll", onScroll)
             $(window).scrollEnd(endScroll, 100);
 
+            $logo.css("fill", "#000")
             $more.css({
                 "background": "url(/blog/static/cross.png) center -9px",
             })
