@@ -1,0 +1,12 @@
+<section id="<%= post.id || ''%>" class="archive-list">
+    <% var title = post.title %>
+    <% var ptn = /^[Pp]oem/ %>
+    <% if(ptn.exec(title)){ %>
+    <% var fields = title.split(':') %>
+    <% var ptitle = fields[1], author = fields[2] %>
+        <p class="mytitle"><a href="<%- url_for(post.path) %>"><span class="black"><%= ptitle %></span> </a></p>
+    <% }else{ %>
+    <p class="mytitle"><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+    <% } %>
+    <!--<p class="mydate"><small><%= post.dt || post.date.format(theme.format_date || config.format_date ) %></small></p>-->
+</section>

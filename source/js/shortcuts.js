@@ -90,6 +90,14 @@ $(function () {
             case 104:
                 page('up');
                 break;
+            // press 'a'
+            case 97:
+                window.location.href = '/blog/archives';
+                break;
+            // press 'b'
+            case 98:
+                postIdx = postsNum;
+                break;
         }
         scroll2nthPost(postIdx)
     })
