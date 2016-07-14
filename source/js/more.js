@@ -73,7 +73,7 @@ $(function () {
             $more.animate({
                 "top": $head.offset().top - $(window).scrollTop() + 10 + "px",
                 "opacity": "1",
-            }, 500);
+            }, 300);
 
             $more.css({
                 "background": "url(/blog/static/cross.png) center 0",

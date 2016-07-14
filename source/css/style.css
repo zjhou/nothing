@@ -127,7 +127,17 @@ table {
 th, td {
     text-align: left;
     padding: 5px 10px;
-    border-bottom: 1px solid #e5e5e5;
+}
+
+
+tr:first-child {
+    border-top: none;
+}
+
+tr {
+    text-align: left;
+    padding: 5px 10px;
+    border-top: 1px solid #e5e5e5;
 }
 
 dt {
@@ -247,6 +257,10 @@ header ul a strong {
     font-size: 14px;
     display: block;
     color: #222;
+}
+
+section.archive-list {
+    padding-bottom: 0;
 }
 
 section {
