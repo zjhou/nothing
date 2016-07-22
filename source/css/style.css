@@ -109,6 +109,14 @@ code, pre {
     font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
     color: #333;
     font-size: 12px;
+    padding: 0 1px;
+    margin: 0 1px;
+}
+
+code {
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.11), 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+    background: #fefefe;
+    border: solid #fcfcfc 1px;
 }
 
 pre {
@@ -128,7 +136,6 @@ th, td {
     text-align: left;
     padding: 5px 10px;
 }
-
 
 tr:first-child {
     border-top: none;
@@ -430,7 +437,7 @@ footer {
     display: inline-block;
     font-size: 12px;
     background: url(../static/cross.png) center -9px;
-    opacity:.5;
+    opacity: .5;
     color: #fff;
     -webkit-transition: opacity .2s;
     -moz-transition: opacity .2s;
@@ -440,7 +447,7 @@ footer {
     z-index: 999;
 }
 
-#more:hover{
+#more:hover {
     cursor: pointer;
     opacity: .2;
 }
@@ -458,7 +465,7 @@ footer {
     z-index: 998;
 }
 
-#pannel object{
+#pannel object {
     fill: #fff;
 }
 
@@ -468,7 +475,7 @@ footer {
     text-shadow: none;
 }
 
-.pl-cont{
+.pl-cont {
     /*text-align: right;*/
 }
 

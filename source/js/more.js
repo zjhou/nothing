@@ -69,7 +69,12 @@ $(function () {
             $(window).off("scroll");
             $content.addClass("blur");
 
-            $logo.css("fill", "#fff")
+            $logo.css("fill", "#fff");
+
+
+            //fixme: 火狐浏览器因使用了scroll-linked效果导致动画位置有误，
+            //$(window).scrollTop(0)
+
             $more.animate({
                 "top": $head.offset().top - $(window).scrollTop() + 10 + "px",
                 "opacity": "1",
