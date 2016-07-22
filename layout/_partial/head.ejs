@@ -6,9 +6,10 @@
         <% if (page.title) { %>
         <%= page.title %>
         <% }else{ %>
-        <%= config.title %>
+        <%= theme.title || config.title %>
         <% } %>
     </title>
+    <%- favicon_tag(theme.favicon) %>
     <%- css('css/highlight') %>
     <%- css('css/style') %>
     <%- css('css/bootstrap.min.css') %>
