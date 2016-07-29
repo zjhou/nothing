@@ -4,7 +4,7 @@
 <svg width="13" height="21" version="1.1"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-    <a xlink:href="/blog" target="_parent">
+    <a xlink:href="/" target="_parent">
         <path d="M0 0  L5 0  L5 3  L0 3  L0 0  M8 0 L13 0 L13 3 L8 3 L8 0 M0 6  L5 6  L5 9  L0 9  L0 6  M8 6 L13 6 L13 9 L8 9 L8 6 M0 21 L13 21 L13 13 L0 13 L0 21 Z"/>
     </a>
 </svg>

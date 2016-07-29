@@ -81,7 +81,7 @@ $(function () {
             }, 300);
 
             $more.css({
-                "background": "url(/blog/static/cross.png) center 0",
+                "background": "url(/static/cross.png) center 0",
             })
         } else {
             position();
@@ -91,7 +91,7 @@ $(function () {
 
             $logo.css("fill", "#000")
             $more.css({
-                "background": "url(/blog/static/cross.png) center -9px",
+                "background": "url(/static/cross.png) center -9px",
             })
         }
     }
