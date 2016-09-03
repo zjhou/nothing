@@ -1,11 +1,13 @@
 @font-face {
-    font-family: UbtMono;
-    src: url(/UbtMono.ttf);
+    font-family: Ubuntu-R;
+    src: url(/static/Ubuntu-R.ttf);
 }
 
 body {
     padding: 50px;
-    font: 12px/1.5 UbtMono, '宋体', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 12px;
+    font-family: Ubuntu-R, '宋体', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777;
     overflow-y: scroll;
     font-weight: 300;
