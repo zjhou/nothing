@@ -1,5 +1,5 @@
 logo: /imgs/favicon.png
-favicon: /imgs/fav.png
+favicon: /static/favicon.ico
 title: zjhou ⋅ blog
 format_date: YYYY MM DD
 root: /

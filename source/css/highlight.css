@@ -23,6 +23,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .highlight table {
   margin: 0;
