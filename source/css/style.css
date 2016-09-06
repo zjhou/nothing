@@ -7,7 +7,7 @@ body {
     padding: 50px;
     line-height: 1.5;
     font-size: 12px;
-    font-family: Ubuntu-R, '宋体', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Ubuntu-R, 'SimSun', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777;
     overflow-y: scroll;
     font-weight: 300;
@@ -273,7 +273,6 @@ section.archive-list {
 }
 
 section {
-    width: 500px;
     padding-bottom: 200px;
 }
 
