@@ -92,7 +92,7 @@ $(function () {
                 break;
             // press 'a'
             case 97:
-                window.location.href = '/blog/archives';
+                window.location.href = '/archives';
                 break;
             // press 'b'
             case 98:

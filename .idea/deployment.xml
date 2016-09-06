@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="blog">
+  <component name="PublishConfigData" serverName="blog_theme">
     <serverData>
-      <paths name="blog">
+      <paths name="blog_theme">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/zjh/local/blog/themes/nothing" local="$PROJECT_DIR$" web="/blog" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/source/css/bootstrap.min.css" />
+            <excludedPath local="true" path="$PROJECT_DIR$/source/css/highlight.css" />
+            <excludedPath local="true" path="$PROJECT_DIR$/source/css/pygment_trac.css" />
+            <excludedPath local="true" path="$PROJECT_DIR$/source/js/3rd-lib" />
+            <excludedPath local="true" path="$PROJECT_DIR$/source/static" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
