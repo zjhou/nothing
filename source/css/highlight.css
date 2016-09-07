@@ -1,9 +1,8 @@
 .highlight {
   background: #fff;
-  overflow: auto;
   color: #ccc;
   border-left: #666 solid 1px;
-  padding: 8px 15px;
+  padding: 0 15px;
   margin: 0 0 20px;
   vertical-align: baseline;
 /*line-height font-size * line-height*/

@@ -38,6 +38,10 @@ $(function () {
         }
     }
 
+    function isSmallScreen(){
+        return $(window).width() < 992 ? true : false;
+    }
+
     function page(direction) {
         var id, url;
         switch (direction) {
@@ -62,6 +66,7 @@ $(function () {
 
     /* init
      -------------------------------------------------------*/
+    if(isSmallScreen()){return}
     postIdx = calcPostIdx();
 
     /* handle event
@@ -100,11 +105,11 @@ $(function () {
                 break;
         }
         scroll2nthPost(postIdx)
-    })
+    });
 
     $(window).on("scroll", function () {
         postIdx = calcPostIdx()
     })
-})
+});
 
 

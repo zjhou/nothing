@@ -9,7 +9,6 @@
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/source/css/bootstrap.min.css" />
-            <excludedPath local="true" path="$PROJECT_DIR$/source/css/highlight.css" />
             <excludedPath local="true" path="$PROJECT_DIR$/source/css/pygment_trac.css" />
             <excludedPath local="true" path="$PROJECT_DIR$/source/js/3rd-lib" />
             <excludedPath local="true" path="$PROJECT_DIR$/source/static" />

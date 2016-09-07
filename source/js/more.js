@@ -4,6 +4,7 @@
  */
 
 $(function () {
+
     /* global vars
      -------------------------------------------------------*/
     var $1st_section = $("section:first")
@@ -96,6 +97,7 @@ $(function () {
         }
     }
 
+
     function dayNightToggle() {
         $pannel.fadeToggle();
         isNight = isNight ? false : true;
@@ -124,7 +126,7 @@ $(function () {
         rotate($more, ang_count * 45);
 
         $more.css({
-            "opacity": ".9",
+            "opacity": ".9"
         })
     }
 
@@ -136,7 +138,7 @@ $(function () {
     /* handle event 
      -------------------------------------------------------*/
     $(window).resize(position);
-    $(window).on("scroll", onScroll)
+    $(window).on("scroll", onScroll);
     $(window).scrollEnd(endScroll, 100);
     $more.click(dayNightToggle)
-})
+});
