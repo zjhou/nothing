@@ -38,7 +38,7 @@ $(function () {
         }
     }
 
-    function isSmallScreen(){
+    function isSmallScreen() {
         return $(window).width() < 992 ? true : false;
     }
 
@@ -66,7 +66,9 @@ $(function () {
 
     /* init
      -------------------------------------------------------*/
-    if(isSmallScreen()){return}
+    if (isSmallScreen()) {
+        return
+    }
     postIdx = calcPostIdx();
 
     /* handle event
@@ -82,7 +84,7 @@ $(function () {
                 if (postIdx < $posts.length)
                     postIdx++;
                 break;
-            // press 'k'
+            /* press 'k'*/
             case 107:
                 if (postIdx > 1)
                     postIdx--;
@@ -111,5 +113,4 @@ $(function () {
         postIdx = calcPostIdx()
     })
 });
-
 
