@@ -1,5 +1,4 @@
-<% console.log('hello') %>
-<% page.posts.sort("dt", "desc").each(function(post){ %>
+<% page.posts.each(function(post){ %>
 <%- partial('_partial/article', {post: post, index: true}) %>
 <% }) %>
 
