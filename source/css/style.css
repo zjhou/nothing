@@ -1,13 +1,13 @@
-@font-face {
+/*@font-face {
     font-family: Ubuntu-R;
     src: url(/static/Ubuntu-R.ttf);
-}
+}*/
 
 body {
     padding: 50px;
     line-height: 1.5;
     font-size: 12px;
-    font-family: Ubuntu-R, 'SimSun', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'SimSun', 'andale mono', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #777;
     overflow-y: scroll;
     font-weight: 300;
@@ -108,7 +108,7 @@ blockquote {
 }
 
 code, pre {
-    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+    font-family: 'andale mono', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
     color: #333;
     font-size: 12px;
     padding: 0 1px;
