@@ -74,6 +74,7 @@ $(function () {
     /* handle event
      -------------------------------------------------------*/
     $("body").on("keypress", function (e) {
+        console.log(e.keyCode);
         switch (e.keyCode) {
             // press 't'
             case 116:
@@ -96,6 +97,10 @@ $(function () {
             // press 'h'
             case 104:
                 page('up');
+                break;
+            // press 'i'
+            case 105:
+                window.location.href = '/';
                 break;
             // press 'a'
             case 97:
