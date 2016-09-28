@@ -6,7 +6,7 @@
 $(function () {
     var A = JSON.parse($("#arch-data").attr('data-arch'));
 
-    function mysort(a, b) { return parseInt(a)  < parseInt(b); }
+    function mysort(a, b) { return parseInt(b)  - parseInt(a); }
 
     function getYear() {
         var yearArr = [];
@@ -29,6 +29,7 @@ $(function () {
         for(var d in A["_" + year]["_" + month]){
             dayArr.push(d.replace(/_/, ''));
         }
+
         return dayArr.sort(mysort);
     }
     
@@ -92,6 +93,9 @@ $(function () {
             $(this).addClass("active");
 
             emptyColByLevel($(this).parent().attr('data-level'));
+
+            // console.log(getDayByYearAndMonth(year, $(this).text()));
+
             $dayCol.html(numTpl(getDayByYearAndMonth(year, $(this).text())));
 
             onDayClick(year, $(this).text());
