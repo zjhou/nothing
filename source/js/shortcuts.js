@@ -74,6 +74,7 @@ $(function () {
     /* handle event
      -------------------------------------------------------*/
     $("body").on("keypress", function (e) {
+        // console.log(e.keyCode);
         switch (e.keyCode) {
             // press 't'
             case 116:
@@ -88,6 +89,10 @@ $(function () {
             case 107:
                 if (postIdx > 1)
                     postIdx--;
+                break;
+            // press 'm'
+            case 109:
+                $("#more").trigger("click");
                 break;
             // press 'l'
             case 108:
