@@ -87,10 +87,10 @@ $(function () {
     function onMonthClick(year) {
         $monthNum = $monthCol.find("span");
 
-        $monthNum.removeClass("active");
-        $(this).addClass("active");
-
         $monthNum.off("click").on("click", function () {
+            $monthNum.removeClass("active");
+            $(this).addClass("active");
+
             emptyColByLevel($(this).parent().attr('data-level'));
             $dayCol.html(numTpl(getDayByYearAndMonth(year, $(this).text())));
 
@@ -101,10 +101,10 @@ $(function () {
     function onDayClick(year, month) {
         $dayNum = $dayCol.find("span");
 
-        $dayNum.removeClass("active");
-        $(this).addClass("active");
-
         $dayNum.off("click").on("click", function () {
+            $dayNum.removeClass("active");
+            $(this).addClass("active");
+
             $article.html(postTpl(getPostByDate(year, month, $(this).text())))
         });
 

@@ -489,4 +489,8 @@ section div span {
     cursor: pointer;
 }
 
+.active {
+    text-decoration: line-through;
+}
+
 

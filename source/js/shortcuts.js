@@ -74,7 +74,6 @@ $(function () {
     /* handle event
      -------------------------------------------------------*/
     $("body").on("keypress", function (e) {
-        console.log(e.keyCode);
         switch (e.keyCode) {
             // press 't'
             case 116:
