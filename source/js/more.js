@@ -7,7 +7,7 @@ $(function () {
 
     /* global vars
      -------------------------------------------------------*/
-    var $1st_section = $("section:first")
+    var $1st_section = $("section:last")
         , $head = $("header")
         , $logo = $("#pannel svg")
         , margin = 40

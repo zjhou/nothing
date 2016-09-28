@@ -483,3 +483,10 @@ footer {
     -webkit-filter: blur(3px);
 }
 
+/* archive */
+section div span {
+    color: black;
+    cursor: pointer;
+}
+
+

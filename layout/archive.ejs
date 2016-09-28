@@ -1,3 +1,56 @@
-<% site.posts.sort('date', -1).each(function(post){ %>
-<%- partial('_partial/archive', {post: post}) %>
-<% }) %>
+<% var years = site.posts.sort('date', -1).map(function (post) {
+    return post.date.year();
+}).filter(function (year, pos, years) {
+    return !pos || year != years[pos - 1];
+}) %>
+
+<% var a = {} %>
+<% site.posts.map(function (post) {
+
+    var postMin = {};
+    postMin.date = date(post.date, '_YY-_MM-_DD').split('-');
+    postMin.title = post.title;
+    postMin.path = url_for(post.path);
+    return postMin;
+
+}).forEach(function (post) {
+    var y = post.date[0],
+        m = post.date[1],
+        d = post.date[2],
+        p = {};
+
+    p.title = post.title;
+    p.path = post.path;
+
+    if (typeof a[y] == 'undefined') a[y] = {}
+    if (typeof a[y][m] == 'undefined') a[y][m] = {}
+    if (typeof a[y][m][d] == 'undefined') a[y][m][d] = [];
+
+    a[y][m][d].push(p)
+
+}) %>
+
+<section class="col-md-2">
+    <p class="mytitle">年</p>
+    <div class="col" id="year-col" data-level="0" >
+    </div>
+</section>
+<section class="col-md-2">
+    <p class="mytitle">月</p>
+    <div class="col" id="month-col" data-level="1" >
+    </div>
+</section>
+
+<section class="col-md-2">
+    <p class="mytitle">日</p>
+    <div  class="col" id="day-col" data-level="2">
+    </div>
+</section>
+
+<section class="col-md-6">
+    <p class="mytitle">文</p>
+    <div class="col" id="post-col" data-level="3">
+    </div>
+</section>
+<div id="arch-data" data-arch="<%= JSON.stringify(a)%>"></div>
+<%- js('js/archives.js') %>
