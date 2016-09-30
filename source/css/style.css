@@ -2,6 +2,16 @@
     font-family: Ubuntu-R;
     src: url(/static/Ubuntu-R.ttf);
 }*/
+*::selection{
+    background: #000;
+    color:#fff;
+}
+
+*::-moz-selection
+{
+    background: #000;
+    color:#fff;
+}
 
 body {
     padding: 50px;
