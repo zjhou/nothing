@@ -346,6 +346,7 @@ hr {
 #right-navigator {
     display: block;
     margin: 10px 0;
+    width: 30px;
 }
 
 /*
@@ -504,3 +505,44 @@ section div span {
 }
 
 
+/* comment */
+#newCmt input {
+    width: 100px;
+    border: none;
+    border-bottom: solid 1px #eeeeee;
+    outline: none;
+}
+#newCmt textarea {
+    width: 500px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #dedede;
+}
+#newCmt button {
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: solid 1px #dedede;
+    cursor: pointer;
+    padding: 1px 0;
+}
+
+input#site {
+    width: 170px;
+}
+
+input#email {
+    width: 150px;
+}
+
+.author {
+    color: #ff601e;
+}
+
+.rep span {
+    color: #4d885d;
+    border-left: solid 3px;
+    padding: 0 3px;
+}

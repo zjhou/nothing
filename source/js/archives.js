@@ -6,33 +6,35 @@
 $(function () {
     var A = JSON.parse($("#arch-data").attr('data-arch'));
 
-    function mysort(a, b) { return parseInt(b)  - parseInt(a); }
+    function mysort(a, b) {
+        return parseInt(b) - parseInt(a);
+    }
 
     function getYear() {
         var yearArr = [];
-        for(var y in A) {
+        for (var y in A) {
             yearArr.push(y.replace(/_/, ''));
         }
         return yearArr.sort(mysort);
     }
-    
+
     function getMonthByYear(year) {
         var monthArr = [];
-        for(var m in A["_" + year]){
-           monthArr.push(m.replace(/_/, ''));
+        for (var m in A["_" + year]) {
+            monthArr.push(m.replace(/_/, ''));
         }
         return monthArr.sort(mysort);
-    } 
-    
+    }
+
     function getDayByYearAndMonth(year, month) {
         var dayArr = [];
-        for(var d in A["_" + year]["_" + month]){
+        for (var d in A["_" + year]["_" + month]) {
             dayArr.push(d.replace(/_/, ''));
         }
 
         return dayArr.sort(mysort);
     }
-    
+
     function getPostByDate(year, month, day) {
         return A["_" + year]["_" + month]["_" + day];
     }
@@ -40,7 +42,7 @@ $(function () {
     function numTpl(numArr) {
         if (!numArr) return;
         var html = '';
-        for(var i = 0; i < numArr.length; i++){
+        for (var i = 0; i < numArr.length; i++) {
             html += '<span class="num">' + numArr[i] + '</span><br>'
         }
         return html;
@@ -49,7 +51,7 @@ $(function () {
     function postTpl(postArr) {
         if (!postArr) return;
         var html = '';
-        for(var i = 0; i < postArr.length; i++){
+        for (var i = 0; i < postArr.length; i++) {
             html += '<a class="post" target="_blank" href="'
                 + postArr[i].path + '">' + postArr[i].title + '</a><br>'
         }
@@ -62,7 +64,7 @@ $(function () {
             return index > level;
         }).children().fadeOut();
     }
-    
+
 
     /* 初始化年份 */
     var $yearCol = $("#year-col");
@@ -84,7 +86,7 @@ $(function () {
 
         onMonthClick($(this).text());
     });
-    
+
     function onMonthClick(year) {
         $monthNum = $monthCol.find("span");
 
@@ -113,6 +115,7 @@ $(function () {
         });
 
     }
+
 
     // 测试
     // console.log(getYear());

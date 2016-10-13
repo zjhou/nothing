@@ -1,5 +1,7 @@
 /*
  * Created by ZjHOU on 2016/07/12.
+ * Last modify: 2016/09/28.
+ * Only works in Chrome.
  * Licence : Do what the fuck you want to.
  */
 
@@ -75,47 +77,51 @@ $(function () {
      -------------------------------------------------------*/
     $("body").on("keypress", function (e) {
         // console.log(e.keyCode);
-        switch (e.keyCode) {
-            // press 't'
-            case 116:
-                postIdx = 1;
-                break;
-            // press 'j'
-            case 106:
-                if (postIdx < $posts.length)
-                    postIdx++;
-                break;
-            /* press 'k'*/
-            case 107:
-                if (postIdx > 1)
-                    postIdx--;
-                break;
-            // press 'm'
-            case 109:
-                $("#more").trigger("click");
-                break;
-            // press 'l'
-            case 108:
-                page('down');
-                break;
-            // press 'h'
-            case 104:
-                page('up');
-                break;
-            // press 'i'
-            case 105:
-                window.location.href = '/';
-                break;
-            // press 'a'
-            case 97:
-                window.location.href = '/archives';
-                break;
-            // press 'b'
-            case 98:
-                postIdx = postsNum;
-                break;
+        if(e.target == this){
+            switch (e.keyCode) {
+                // press 't'
+                case 116:
+                    postIdx = 1;
+                    break;
+                // press 'j'
+                case 106:
+                    if (postIdx < $posts.length)
+                        postIdx++;
+                    scroll2nthPost(postIdx);
+                    break;
+                /* press 'k'*/
+                case 107:
+                    if (postIdx > 1)
+                        postIdx--;
+                    scroll2nthPost(postIdx);
+                    break;
+                // press 'm'
+                case 109:
+                    $("#more").trigger("click");
+                    break;
+                // press 'l'
+                case 108:
+                    page('down');
+                    break;
+                // press 'h'
+                case 104:
+                    page('up');
+                    break;
+                // press 'i'
+                case 105:
+                    window.location.href = '/';
+                    break;
+                // press 'a'
+                case 97:
+                    window.location.href = '/archives';
+                    break;
+                // press 'b'
+                case 98:
+                    postIdx = postsNum;
+                    scroll2nthPost(postIdx);
+                    break;
+            }
         }
-        scroll2nthPost(postIdx)
     });
 
     $(window).on("scroll", function () {

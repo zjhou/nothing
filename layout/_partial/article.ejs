@@ -16,5 +16,8 @@
 </section>
 
 <% if(!index){ %>
+    <% if(theme.comment) { %>
+    <%- js('js/cmt.js') %>
+    <% } %>
     <%- partial('_partial/nav', {page: page}) %>
 <% } %>
